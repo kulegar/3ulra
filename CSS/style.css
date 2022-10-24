@@ -1,0 +1,930 @@
+*{
+margin:0;
+padding:0;
+}
+
+@font-face{
+font-family:comic_sans_ms_bold;
+src:url(../font/comic_sans_ms_bold.ttf) format('truetype');
+}
+@font-face{
+font-family:HelveticaLight;
+src:url(../font/HelveticaLight.ttf) format('truetype');
+}
+@font-face{
+font-family:HelveticaUltraLight;
+src:url(../font/HelveticaUltraLight.ttf) format('truetype');
+}
+@font-face{
+font-family:HelveticaThin;
+src:url(../font/HelveticaThin.ttf) format('truetype');
+}
+@font-face{
+font-family:HelveticaThinItalic;
+src:url(../font/HelveticaThinItalic.ttf) format('truetype');
+}
+@font-face{
+font-family:967639;
+src:url(../font/967639.ttf);
+}
+@font-face{
+font-family:HelveticaRegular;
+src:url(../font/HelveticaRegular.ttf);
+}
+@font-face{
+font-family:L5AGemry;
+src:url(../font/L5AGemry.ttf) format('truetype');
+}
+@font-face{
+font-family:PFEncoreSansPro-Bold;
+src:url(../font/PFEncoreSansPro-Bold.otf);
+}
+@font-face{
+font-family:light;
+src:url(../font/light.ttf) format('truetype');
+}
+@font-face{
+font-family:FFF_Tusj;
+src:url(../font/FFF_Tusj.ttf) format('truetype');
+}
+
+
+html{
+	position:relative;
+	background: url(../image/FON/9.jpg) no-repeat fixed;
+	-webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+	
+#wrap{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+/*	
+=========================================
+		Навигационное меню	
+=========================================*/
+#wrap #polemeny{
+	position:fixed;
+	width:100%;
+	top:0px;
+	height:70px;
+	background:rgba(24, 24, 24, 0.8);
+	z-index:2;
+	box-sizing:content-box;
+}
+
+
+/*=========================================
+				БУКВА "Е"	
+=========================================*/
+#meny{
+	background:url(../image/meny_gorisont/E2.png) no-repeat 30px 15px;
+}
+
+
+
+/*=========================================	
+		НАДПИСЬ РЯДОМ С БУКВОЙ " Е	
+=========================================*/
+#meny h2{
+	font-family:AMGDT_Regular, comic_sans_ms_bold;
+	color:white;
+	width:170px;
+	float:left;
+	margin-left:90px;
+	margin-top:30px;
+}
+
+
+
+/* =========================================	
+				МЕНЮ
+========================================= */	
+#meny>ul{
+	height:70px;
+}
+
+#meny>ul>li{
+	position:relative;
+	list-style-type:none;
+	float:right;
+	padding-right:30px;
+}
+
+#navigation>ul>li:first-child>a {
+    padding-right: 29px;
+	
+}
+
+#meny>ul>li>a{
+	font:bold 19px/45px L5AGemry, Tahoma;
+	color:white;
+	padding: 10px 20px;
+	text-decoration:none;
+	display:block;
+}
+
+#meny>ul>li>a:hover{
+	color:#e85c57;
+	border-bottom:3px solid #e85c57;
+	background-color:#111;
+}
+
+/*=========================================
+ВЫПАДАЮЩЕЕ МЕНЮ
+=========================================*/
+#meny>ul>li>ul {
+	position:absolute;
+	top:67px;
+	width:200px;
+	background-color:#181818;
+	display:none;
+}
+
+#meny>ul>li>ul:hover{
+	-webkit-transition: all 5s ease-in-out;
+	-moz-transition: all 5s ease-in-out;
+	-o-transition: all 5s ease-in-out;
+	-ms-transition: all 5s ease-in-out;
+	transition: all 0.5s ease-in-out
+}
+
+#meny>ul>li:hover>ul {
+	display:block;
+}
+
+#meny>ul>li>ul>li{
+	list-style-type:none;
+}
+
+
+
+#meny>ul>li>ul>li>a{
+	width:150px;
+	font:bold 18px/45px L5AGemry, Tahoma;
+	color:white;
+	padding:17px 25px;
+	text-decoration:none;
+	border-top:1px solid #333;
+	float:left;
+}
+
+#meny>ul>li>ul>li>a:hover{
+	background-color:#111;
+	color:#e85c57;
+}
+
+
+
+
+/*======================================================================================================================================================
+				ШАПКА
+=======================================================================================================================================================*/
+
+#header{
+outline:5px solid #cc0000;
+position:relative;
+width:100%;
+padding-top:350px;
+padding-bottom:25%;
+}
+
+#header h1{
+	text-align:center;
+	font:bold 70px PFEncoreSansPro-Bold;
+	color:white;
+
+}
+
+#header h1 .best{
+font-size:75px;
+color:#e85c57;
+}
+
+#header p{
+	position:relative;
+	font:35px light;
+	color:#c1c1c1;
+	text-align:center;
+}
+
+.button{
+	position:relative;
+	margin:30px auto;
+	width:210px;
+	height:60px;
+	transition:1000ms;
+}
+
+.button:hover{
+background-color:#111;
+transition:500ms;
+}
+
+
+
+
+
+/*=========================================
+			КОНТЕНТ
+=========================================*/
+#content{
+width:100%;
+height:100%;
+background: #e8e6e6;
+}
+
+
+
+#content1{
+}
+/*=========================================
+			Контент1
+=========================================*/
+
+#content1  h2{
+padding:30px 0 15px 0;
+font: bold 30px HelveticaRegular;
+color:#222;
+text-align:center;
+}
+
+.slova{
+color:#fc635e;
+}
+
+
+#content1>p{
+width:750px;
+margin: 15px auto;
+border-top:1px solid #adadad;
+font:700 20px HelveticaThin;
+text-align:center;
+color:#888;
+clear:left;
+}
+
+/*=========================================
+			ОТДЕЛЫ
+=========================================*/
+#otdel{
+position:relative;
+text-align:center;
+width:100%;
+margin:50px auto;
+}
+
+
+/*=========================================
+			ФОРТЕПИАНО
+=========================================*/
+.piano{
+position:relative;
+margin:15px 35px;
+padding:10px auto;
+width:220px;
+height:100%;
+background: url(../image/OTDELY/piano.png) no-repeat;
+background-size:60%;
+background-position: 45px 10px;
+display:inline-block;
+}
+
+.piano>h3{
+padding: 180px 0 0 0;
+font: bold 20px HelveticaRegular;
+text-align:center;
+color:#666;
+}
+
+.piano>p{
+
+font: bold 20px HelveticaUltraLight;
+text-align:center;
+color:#444;
+}
+hr{
+margin:13px auto 27px auto;
+width:80px;
+}
+
+
+
+
+/*=========================================
+			МИКРОФОН ВОКАЛ
+=========================================*/
+.vokal{
+position:relative;
+margin:15px 35px;
+padding:10px auto;
+width:220px;
+height:100%;
+background: url(../image/OTDELY/microphone.png) no-repeat;
+background-size:60%;
+background-position: 45px 10px;
+display:inline-block;
+transition:250ms;
+}
+
+.vokal:hover{
+background: url(../image/OTDELY/microphone1.png) no-repeat;
+background-size:60%;
+background-position: 45px 10px;
+transition:250ms;
+}
+
+.vokal>h3{
+padding: 180px 0 0 0;
+font: bold 20px HelveticaRegular;
+text-align:center;
+color:#666;
+
+}
+
+.vokal>p{
+
+font: bold 20px HelveticaUltraLight;
+text-align:center;
+color:#444;
+}
+
+hr{
+margin:13px auto 27px auto;
+width:80px;
+}
+
+
+/*=========================================
+		СТРУННЫЕ ИНСТРУМЕНТЫ
+=========================================*/
+.struna{
+position:relative;
+margin:15px 35px;
+padding:10px auto;
+width:220px;
+height:100%;
+background: url(../image/OTDELY/struna.png) no-repeat;
+background-size:60%;
+background-position: 45px 10px;
+display:inline-block;
+}
+
+/* .struna:hover{
+background: url(../image/struna1.png) no-repeat;
+background-size:60%;
+background-position: 45px 10px;
+transition:250ms;
+} */
+
+
+.struna>h3{
+padding: 180px 0 0 0;
+font: bold 20px HelveticaRegular;
+text-align:center;
+color:#666;
+}
+
+.struna>p{
+
+font: bold 20px HelveticaUltraLight;
+text-align:center;
+color:#444;
+}
+hr{
+margin:13px auto 27px auto;
+width:80px;
+}
+
+
+
+/*=========================================
+		ТЕОРИЯ
+=========================================*/
+
+.teoria{
+position:relative;
+margin:15px 35px;
+padding:10px auto;
+width:220px;
+height:100%;
+background: url(../image/OTDELY/teory.png) no-repeat;
+background-size:60%;
+background-position: 45px 10px;
+display:inline-block;
+}
+
+
+.teoria>h3{
+padding: 180px 0 0 0;
+font: bold 20px HelveticaRegular;
+text-align:center;
+color:#666;
+}
+
+.teoria>p{
+font: bold 20px HelveticaUltraLight;
+text-align:center;
+color:#444;
+}
+hr{
+margin:13px auto 27px auto;
+width:80px;
+}
+
+
+/*======================================================================================================================================================
+				Картинка между отделами и Эвсе о школе"
+=======================================================================================================================================================*/
+#trava{
+position:relative;
+width:100%;
+height:250px;
+background-image:url(../image/O_shkole/trava.jpg);
+}
+
+.trava1{
+position:absolute;
+width:100%;
+height:100%;
+background-image:url(../image/O_shkole/overaly.png);
+}
+
+
+/*======================================================================================================================================================
+				О школе
+=======================================================================================================================================================*/
+
+#content2{
+position:relative;
+width:100%;
+height:550px;
+}
+
+#content2  h2{
+padding:30px 0 15px 0;
+font: bold 30px HelveticaRegular;
+color:#222;
+text-align:center;
+}
+
+.slova1{
+color:#fc635e;
+}
+
+.oshkole{
+position:relative;
+width:20%;
+height:40%;
+}
+
+#content2 p{
+width:450px;
+margin: 15px auto;
+border-top:1px solid #adadad;
+font:700 20px HelveticaThin;
+text-align:center;
+color:#888;
+clear:left;
+}
+
+#content2>.oshkole{
+margin: 100px 0 0 17% ;
+
+}
+
+#content2>.oshkole>li{
+position:relative;
+list-style-type:none;
+width:250px;
+}
+
+#content2>.oshkole>li>a{
+font: bold 20px/25px HelveticaRegular;
+text-decoration:none;
+padding: 15px 15px 15px 5px;
+color: black;
+display:block;
+}
+
+
+
+#content2>.oshkole>li>a:hover{
+background-color:#fc635e;
+color:white;
+width:200px;
+}
+
+
+#content2>.oshkole>li>a:active{
+background-color:#fc635e;
+color:white;
+width:200px;
+}
+
+#content2>.oshkole>li>a:hover:after{
+	content: ''; 
+    position: absolute; 
+    left: 220px; top:0;
+    border: 27.5px solid transparent;	
+	border-left: 30px solid #fc635e;
+}
+#content2>.oshkole>li>a:active{
+	content: ''; 
+    position: relative; 
+    left: 220px; top:0; 
+    border: 27.5px solid transparent;	
+	border-left: 30px solid #fc635e;
+	display:block;
+}
+
+
+/*=========================================
+		Пианино со значками
+=========================================*/
+
+#kartinka{
+position:relative;
+width:100%;
+height:430px;
+background-image:url(../image/O_shkole/pianino.jpg);
+
+}
+
+.kartinka1{
+position:absolute;
+width:100%;
+height:100%;
+background-image:url(../image/O_shkole/overaly.png);
+}
+
+
+/*=========================================
+		Значки
+=========================================*/
+
+.znachki{
+position:absolute;
+margin-top:100px;
+width:100%;
+height:220px;	
+text-align:center;
+display:block;
+}
+
+.samoletik{
+	background-image:url(../image/O_shkole/samoletik.png);
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-position: 35px 10px;
+	color:white;
+	display:inline-block;
+	padding:100px 0 0 0;
+	margin: 0 80px;
+	
+}
+
+.chemodanchik{
+	background-image:url(../image/O_shkole/chelovechek.png);
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-position: 35px 10px;
+	color:white;
+	display:inline-block;
+	padding:100px 0 0 0;
+	margin: 0 80px;
+	
+}
+
+.chelovechek{
+	background-image:url(../image/O_shkole/chelovechek.png);
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-position: 35px 10px;
+	color:white;
+	display:inline-block;
+	padding:100px 0 0 0;
+	margin: 0 80px;
+	
+}
+
+.kubok{
+	background-image:url(../image/O_shkole/kubok.png);
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-position: 35px 10px;
+	color:white;
+	display:inline-block;
+	padding:100px 0 0 0;
+	margin: 0 80px;
+	
+}
+.znachki h2{
+	font: bold 55px/80px HelveticaRegular;
+	text-align:center;
+}
+
+.znachki h3{
+	font: bold 24px HelveticaThinItalic;
+	
+}
+
+
+/*======================================================================================================================================================
+				Педагоги
+=======================================================================================================================================================*/
+#pedagogi{
+	
+position:relative;
+width:100%;
+height:650px;	
+background-color:white;
+}
+#pedagogi  h2{
+padding:30px 0 15px 0;
+font: bold 30px HelveticaRegular;
+color:#222;
+text-align:center;
+}
+
+.slova{
+color:#5f5f5f;
+}
+
+#pedagogi>p{
+width:550px;
+margin: 15px auto;
+border-top:1px solid #adadad;
+font:700 20px HelveticaThin;
+text-align:center;
+color:#888;
+}
+
+
+.pedagogi1{
+position:absolute;
+margin-top:70px;
+width:100%;
+text-align:center;
+display:block;
+}
+
+
+.neizv1{
+	background-image:url(../image/pedagogi/neisv.png);
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-position: 13px 0;
+	color:white;
+	display:inline-block;
+	height:380px;
+	width:230px;
+	margin-right:70px;
+}
+
+
+
+.neizv1>h3{
+	padding-top:280px;
+	font: bold 22px HelveticaLight;
+	color:#222;
+	text-align:center;
+}
+
+.neizv2{
+	background-image:url(../image/pedagogi/neisv.png);
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-position: 13px 0;
+	color:white;
+	display:inline-block;
+	height:380px;
+	width:230px;
+	margin-right:70px;
+}
+
+.neizv2>h3{
+	padding-top:280px;
+	font: bold 22px HelveticaLight;
+	color:#222;
+	text-align:center;
+}
+
+.neizv3{
+	background-image:url(../image/pedagogi/neisv.png);
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-position: 13px 0;
+	color:white;
+	display:inline-block;
+	height:380px;
+	width:230px;
+	margin-right:70px;
+}
+
+.neizv3>h3{
+	padding-top:280px;
+	font: bold 22px HelveticaLight;
+	color:#222;
+	text-align:center;
+}
+
+.neizv4{
+	background-image:url(../image/pedagogi/neisv.png);
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-position: 13px 0;
+	color:white;
+	display:inline-block;
+	height:380px;
+	width:230px;
+	margin-right:70px;
+}
+
+.neizv4>h3{
+	padding-top:280px;
+	font: bold 22px HelveticaLight;
+	color:#222;
+	text-align:center;
+}
+
+.soc_seti{
+	position:relative;
+	width:100%;
+	height:25px;
+	margin-top:10px;
+	
+}
+
+.vk{
+	background-image:url(../image/pedagogi/vk.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	color:white;
+	display:inline-block;	
+	height:25px;
+	width:25px;
+	opacity:0.5;
+	transition:400ms;
+}
+.vk:hover{
+	background-image:url(../image/pedagogi/vk1.png);
+	background-repeat:no-repeat;
+	background-size:100%;	
+	opacity:1;
+	transition:250ms;
+}
+
+
+
+.mail{
+background-image:url(../image/pedagogi/mail.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	color:white;
+	display:inline-block;	
+	height:25px;
+	width:25px;
+	opacity:0.5;
+	transition:400ms;
+}
+.mail:hover{
+	background-image:url(../image/pedagogi/mail1.png);
+	background-repeat:no-repeat;
+	background-size:100%;	
+	opacity:1;
+	transition:250ms;
+}
+
+.facebook{
+background-image:url(../image/pedagogi/facebook.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	color:white;
+	display:inline-block;	
+	height:25px;
+	width:25px;	
+	opacity:0.5;	
+	transition:400ms;
+}
+.facebook:hover{
+	background-image:url(../image/pedagogi/facebook1.png);
+	background-repeat:no-repeat;
+	background-size:100%;	
+	opacity:1;
+	transition:250ms;
+	}
+
+.twitter{
+	background-image:url(../image/pedagogi/twitter.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	color:white;
+	display:inline-block;	
+	height:25px;
+	width:25px;
+	opacity:0.5;
+	transition:400ms;
+}
+.twitter:hover{
+	background-image:url(../image/pedagogi/twitter1.png);
+	background-repeat:no-repeat;
+	background-size:100%;	
+	opacity:1;
+	transition:250ms;
+}
+
+.neizv1,.neizv2,.neizv3,.neizv4{
+	padding:10px 0 0 0;
+	color:#777;
+	font:400 17px/40px HelveticaThin;
+}
+
+
+/*======================================================================================================================================================
+				Педагоги
+=======================================================================================================================================================*/
+#footer{
+	position:relative;
+	width:100%;
+	height:400px;
+}
+
+.karta{
+	border-top:1px solid #c5c5c5;
+	background-image:url(../image/footer/karta2.png);
+	background-repeat:no-repeat;
+	width:100%;
+	height:400px;
+}
+
+
+.karta>.kontaktybackground{
+	position:absolute;
+	margin:;
+	width:375px;
+	height:100%;
+	background-color:#111;
+	opacity:0.4;
+	z-index:2;
+	margin-left:280px;
+}
+.karta>.kontaktybackground{
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:375px;
+	height:402px;
+	background-color:#111;
+	opacity:0.7;
+	z-index:3;
+}
+.karta>.kontaktybackground>h3{
+	color:white;
+	font-family:HelveticaRegular;
+	font-weight:700;
+	font-size:25px;
+	padding:30px 0 30px 30px;
+}
+
+
+.karta>.kontaktybackground>p>b{
+	color:white;
+	text-align: left;
+	font-family:HelveticaRegular;
+	font-weight:700;
+	font-size:19px;
+	padding-left:30px;
+}
+
+.karta>.kontaktybackground>.nomer{
+	color:white;
+	font-family:HelveticaRegular;
+	font-weight:100;
+	font-size:17px;
+	padding:10px 0 33px 33px;
+	
+}
+
+
+
+#footer1{
+	width:100;
+	height:260px;
+	background-color:#333;
+	
+}
+
+
+#footer1> h2{
+	font-family:FFF_Tusj;
+	font-size:30px;
+	font-weight:bold;
+	color:white;
+	
+}
